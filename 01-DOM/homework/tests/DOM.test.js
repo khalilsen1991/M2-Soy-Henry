@@ -37,7 +37,7 @@ describe('Clase ToDo', () => {
      expect(typeof ToDo.prototype.completeToDo).toBe('function');
   });
 
-  it('El método completeToDo camabia el atributo \'complete\' to true', () => {
+  it('El método completeToDo cambia el atributo \'complete\' to true', () => {
     newToDo.completeToDo();
     expect(newToDo.complete).toBe(true);
   });
