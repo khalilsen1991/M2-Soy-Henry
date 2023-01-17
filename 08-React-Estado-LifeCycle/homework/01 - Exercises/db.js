@@ -6,9 +6,9 @@ import {
    Cocodrilo,
 } from './src/assets/imagenes';
 
-export default {
+export const data = {
    zoo: {
-      species: [Mamíferos, Reptiles, Aves],
+      species: ['Mamíferos', 'Reptiles', 'Aves'],
       animals: [
          {
             name: 'León',
@@ -38,3 +38,4 @@ export default {
       ],
    },
 };
+

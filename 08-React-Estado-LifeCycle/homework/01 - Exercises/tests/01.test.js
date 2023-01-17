@@ -5,7 +5,7 @@ import { shallow, configure } from 'enzyme'
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17'
 import isReact from 'is-react'
 import nock from 'nock'
-import data from '../db.json'
+import { data } from "../db.js";
 import fetch from 'node-fetch'
 // Importamos variables/componentes
 import Zoo from '../src/components/Zoo/Zoo'

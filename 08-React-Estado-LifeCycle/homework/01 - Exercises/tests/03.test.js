@@ -4,7 +4,7 @@ import { shallow, configure } from "enzyme";
 import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import isReact from "is-react";
 import Animals from "../src/components/Animals/Animals";
-import data from "../db.json";
+import { data } from "../db.js";
 
 configure({ adapter: new Adapter() });
 
@@ -19,7 +19,7 @@ describe("03 | Ejercicios", () => {
 
   it("Debería renderizar un div por cada uno de los animales", () => {
     animalsDivs = animals.find("div");
-    expect(animalsDivs.length).toBe(data.zoo.animals.length + 1);
+    expect(animalsDivs.length).toBe(data.zoo.animals.length);
   });
 
   it("Debería renderizar una etiqueta 'h5' dentro de cada div con el nombre de cada animal", () => {

@@ -4,7 +4,7 @@ import { shallow, configure } from "enzyme";
 import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import isReact from "is-react";
 import Species from "../src/components/Species/Species";
-import data from "../db.json";
+import { data } from "../db.js";
 
 configure({ adapter: new Adapter() });
 
